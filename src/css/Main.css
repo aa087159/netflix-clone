@@ -6,7 +6,7 @@ body {
 .section-a {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/bg.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg.jpg);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /*header*/
@@ -63,22 +63,30 @@ body {
   font-weight: 400;
 }
 
-.content-wrapper input {
+.content-wrapper .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content-wrapper .form-group input {
   width: 40%;
   height: 65px;
   border-radius: 2px;
   border: none;
 }
 
-.content-wrapper button {
+.content-wrapper .form-group button {
   width: 40%;
-  height: 65px;
+  height: 67px;
   background-color: #e50914;
   color: #fff;
   border: none;
   border-radius: 2px;
   font-size: 22px;
-  margin-top: 5px;
 }
 
 .content-wrapper h4 {
@@ -183,28 +191,28 @@ body {
           justify-content: center;
 }
 
-.section-c h4 {
-  text-align: center;
-  font-size: 22px;
-  font-weight: 400;
-  margin-top: 10px;
-}
-
-.section-c input {
+.section-c .inputfield input {
   width: 40%;
   height: 65px;
   border-radius: 2px;
   border: none;
 }
 
-.section-c button {
+.section-c .inputfield button {
   width: 40%;
-  height: 65px;
+  height: 67px;
   background-color: #e50914;
   color: #fff;
   border: none;
   border-radius: 2px;
   font-size: 22px;
+}
+
+.section-c h4 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 10px;
 }
 
 .collapse-wrapper {

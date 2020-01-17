@@ -31,11 +31,15 @@ export class Footer extends Component {
 			<div className='footer-main-wrapper'>
 				<h5>Fragen? Einfach anrufen: 0800-724-0963</h5>
 				<div className='footer-content-wrapper'>
-					{texts.map((each) => {
+					{texts.map((each, index) => {
 						return (
-							<div className='footer-group'>
-								{each.map((text) => {
-									return <a href='/'>{text}</a>;
+							<div className='footer-group' key={index}>
+								{each.map((text, index) => {
+									return (
+										<a href='/' key={index}>
+											{text}
+										</a>
+									);
 								})}
 							</div>
 						);

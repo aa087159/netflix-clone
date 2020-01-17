@@ -15,9 +15,12 @@ export class Banner extends Component {
 						Jederzeit kündbar.
 					</h3>
 				</div>
-
-				<input type='text' placeholder='E-Mail-Adresse' />
-				<button type='submit'>30 TAGE KOSTENLOS AUSPROBIEREN</button>
+				<div className='form-group'>
+					<input type='text' placeholder='E-Mail-Adresse' />
+					<button type='submit'>
+						30 TAGE KOSTENLOS AUSPROBIEREN
+					</button>
+				</div>
 
 				<h4>
 					Sind Sie startklar? Geben Sie Ihre E-Mail-Adresse ein, um
