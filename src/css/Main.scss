@@ -1,0 +1,271 @@
+$main-bg-color: #000;
+$main-red: #e50914;
+$grey-bar: #222222;
+$grey-bar: #222222;
+$collapse: #303030;
+$footer-grey: #9ca6a6;
+
+body {
+	background: $main-bg-color;
+}
+
+/*main page*/
+.section-a {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(../images/bg.jpg);
+	height: 100vh;
+}
+
+/*header*/
+.header-wrapper {
+	display: grid;
+	padding: 2rem 4rem;
+	grid-template-columns: 1fr 1fr;
+	.MainSVG {
+		grid-column: 1/2;
+		width: 150px;
+	}
+
+	.login-button {
+		grid-column: 2/3;
+		justify-self: end;
+		button {
+			border: none;
+			background-color: $main-red;
+			color: #fff;
+			font-size: 20px;
+			padding: 8px 1rem;
+			border-radius: 5px;
+		}
+	}
+}
+
+/*main content*/
+.content-wrapper {
+	padding: 6rem 4rem;
+	text-align: center;
+	color: #fff;
+	.banner-slogan {
+		font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial,
+			sans-serif;
+		h1 {
+			font-size: 55px;
+		}
+		h3 {
+			margin-top: -15px;
+			font-size: 28px;
+			font-weight: 400;
+		}
+	}
+	input {
+		width: 40%;
+		height: 65px;
+		border-radius: 2px;
+		border: none;
+	}
+	button {
+		width: 40%;
+		height: 65px;
+		background-color: $main-red;
+		color: #fff;
+		border: none;
+		border-radius: 2px;
+		font-size: 22px;
+		margin-top: 5px;
+	}
+	h4 {
+		font-size: 22px;
+		font-weight: 400;
+	}
+}
+
+/*showcase*/
+
+.greyBar {
+	height: 8px;
+	background-color: $grey-bar;
+}
+
+.showcase {
+	display: flex;
+	color: #fff;
+	padding: 2rem;
+	.slogan-wrapper {
+		padding: 5rem 7rem;
+		flex-shrink: 3;
+		h1 {
+			font-size: 55px;
+		}
+	}
+	.media-wrapper {
+		flex-grow: 5;
+		position: relative;
+	}
+}
+
+.showcase:nth-child(2) {
+	.media-wrapper {
+		img {
+			position: relative;
+			z-index: 2;
+		}
+		video {
+			position: absolute;
+			top: 20%;
+			left: 13%;
+		}
+	}
+}
+
+.showcase:nth-child(4) {
+	display: flex;
+	.slogan-wrapper {
+		order: 2;
+	}
+	.media-wrapper {
+		order: 1 img {
+			position: relative;
+			z-index: 2;
+		}
+	}
+}
+
+.showcase:nth-child(6) {
+	.media-wrapper {
+		img {
+			position: relative;
+			z-index: 2;
+		}
+		video {
+			position: absolute;
+			max-width: 63%;
+			max-height: 47%;
+			top: 10%;
+			left: 18%;
+		}
+	}
+}
+
+/*collapse*/
+.section-c {
+	color: #fff;
+	padding: 70px 4px;
+	.collapse-title {
+		text-align: center;
+		font-size: 55px;
+		margin: 4rem;
+	}
+	.inputfield {
+		padding: 4rem 4rem 0rem 4rem;
+		display: flex;
+		justify-content: center;
+	}
+	h4 {
+		text-align: center;
+		font-size: 22px;
+		font-weight: 400;
+		margin-top: 10px;
+	}
+	input {
+		width: 40%;
+		height: 65px;
+		border-radius: 2px;
+		border: none;
+	}
+	button {
+		width: 40%;
+		height: 65px;
+		background-color: $main-red;
+		color: #fff;
+		border: none;
+		border-radius: 2px;
+		font-size: 22px;
+	}
+}
+.collapse-wrapper {
+	width: 60%;
+	margin: 8px auto;
+	font-weight: 400;
+	.title {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 1px;
+		padding: 5px 30px;
+		background-color: $collapse;
+
+		cursor: pointer;
+		h1 {
+			font-size: 30px;
+			font-weight: 400;
+		}
+		svg {
+			margin-left: auto;
+			margin-right: 5px;
+			width: 2rem;
+			height: 2rem;
+			transform: rotate(45deg);
+			path {
+				fill: #fff;
+			}
+		}
+	}
+	.hidden {
+		background-color: $collapse;
+		padding: 25px;
+		font-size: 30px;
+	}
+}
+
+//footer
+.section-d {
+	color: $footer-grey;
+	.footer-main-wrapper {
+		padding: 3rem;
+		width: 70%;
+		margin: 3rem auto;
+		h5 {
+			font-size: 1em;
+			font-weight: 400;
+		}
+		select {
+			padding: 1rem;
+			background: transparent;
+			border: 1px solid rgba(156, 166, 166, 0.4);
+			border-radius: 2px;
+			color: $footer-grey;
+			font-size: 20px;
+			margin: 2rem 3rem;
+			appearance: none;
+			option {
+				background: #000;
+				border: none;
+			}
+		}
+		.select-pseudo {
+			position: relative;
+			&::before {
+				content: '\f501';
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+			}
+		}
+	}
+	.footer-content-wrapper {
+		display: flex;
+		justify-content: space-around;
+		.footer-group {
+			display: flex;
+			flex-direction: column;
+			a {
+				list-style: none;
+				color: $footer-grey;
+				text-decoration: none;
+				padding: 8px;
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,327 @@
+body {
+  background: #000;
+}
+
+/*main page*/
+.section-a {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg.jpg);
+  height: 100vh;
+}
+
+/*header*/
+.header-wrapper {
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem 4rem;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.header-wrapper .MainSVG {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  width: 150px;
+}
+
+.header-wrapper .login-button {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.header-wrapper .login-button button {
+  border: none;
+  background-color: #e50914;
+  color: #fff;
+  font-size: 20px;
+  padding: 8px 1rem;
+  border-radius: 5px;
+}
+
+/*main content*/
+.content-wrapper {
+  padding: 6rem 4rem;
+  text-align: center;
+  color: #fff;
+}
+
+.content-wrapper .banner-slogan {
+  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.content-wrapper .banner-slogan h1 {
+  font-size: 55px;
+}
+
+.content-wrapper .banner-slogan h3 {
+  margin-top: -15px;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.content-wrapper input {
+  width: 40%;
+  height: 65px;
+  border-radius: 2px;
+  border: none;
+}
+
+.content-wrapper button {
+  width: 40%;
+  height: 65px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.content-wrapper h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/*showcase*/
+.greyBar {
+  height: 8px;
+  background-color: #222222;
+}
+
+.showcase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  padding: 2rem;
+}
+
+.showcase .slogan-wrapper {
+  padding: 5rem 7rem;
+  -ms-flex-negative: 3;
+      flex-shrink: 3;
+}
+
+.showcase .slogan-wrapper h1 {
+  font-size: 55px;
+}
+
+.showcase .media-wrapper {
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+  position: relative;
+}
+
+.showcase:nth-child(2) .media-wrapper img {
+  position: relative;
+  z-index: 2;
+}
+
+.showcase:nth-child(2) .media-wrapper video {
+  position: absolute;
+  top: 20%;
+  left: 13%;
+}
+
+.showcase:nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showcase:nth-child(4) .slogan-wrapper {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.showcase:nth-child(4) .media-wrapper {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1 img;
+          order: 1 img;
+  order-position: relative;
+  order-z-index: 2;
+}
+
+.showcase:nth-child(6) .media-wrapper img {
+  position: relative;
+  z-index: 2;
+}
+
+.showcase:nth-child(6) .media-wrapper video {
+  position: absolute;
+  max-width: 63%;
+  max-height: 47%;
+  top: 10%;
+  left: 18%;
+}
+
+/*collapse*/
+.section-c {
+  color: #fff;
+  padding: 70px 4px;
+}
+
+.section-c .collapse-title {
+  text-align: center;
+  font-size: 55px;
+  margin: 4rem;
+}
+
+.section-c .inputfield {
+  padding: 4rem 4rem 0rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-c h4 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.section-c input {
+  width: 40%;
+  height: 65px;
+  border-radius: 2px;
+  border: none;
+}
+
+.section-c button {
+  width: 40%;
+  height: 65px;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-size: 22px;
+}
+
+.collapse-wrapper {
+  width: 60%;
+  margin: 8px auto;
+  font-weight: 400;
+}
+
+.collapse-wrapper .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 1px;
+  padding: 5px 30px;
+  background-color: #303030;
+  cursor: pointer;
+}
+
+.collapse-wrapper .title h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.collapse-wrapper .title svg {
+  margin-left: auto;
+  margin-right: 5px;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.collapse-wrapper .title svg path {
+  fill: #fff;
+}
+
+.collapse-wrapper .hidden {
+  background-color: #303030;
+  padding: 25px;
+  font-size: 30px;
+}
+
+.section-d {
+  color: #9ca6a6;
+}
+
+.section-d .footer-main-wrapper {
+  padding: 3rem;
+  width: 70%;
+  margin: 3rem auto;
+}
+
+.section-d .footer-main-wrapper h5 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.section-d .footer-main-wrapper select {
+  padding: 1rem;
+  background: transparent;
+  border: 1px solid rgba(156, 166, 166, 0.4);
+  border-radius: 2px;
+  color: #9ca6a6;
+  font-size: 20px;
+  margin: 2rem 3rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.section-d .footer-main-wrapper select option {
+  background: #000;
+  border: none;
+}
+
+.section-d .footer-main-wrapper .select-pseudo {
+  position: relative;
+}
+
+.section-d .footer-main-wrapper .select-pseudo::before {
+  content: '\f501';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+}
+
+.section-d .footer-content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-d .footer-content-wrapper .footer-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-d .footer-content-wrapper .footer-group a {
+  list-style: none;
+  color: #9ca6a6;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.section-d .footer-content-wrapper .footer-group a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=Main.css.map */
